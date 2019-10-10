@@ -417,16 +417,21 @@
 						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Formularios</div> <i class="icon-menu" title="Forms"></i></li>
 						<li class="nav-item nav-item-submenu">
 							
-						<li class="nav-item nav-item-submenu">
-							<a href="#" class="nav-link"><i class="icon-insert-template"></i> <span>Formularios</span></a>
+						<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
+							<a href="#" class="nav-link"><i class="icon-insert-template"></i> <span>Alumnos</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Form layouts">
 								<li class="nav-item-divider"></li>
 								<li class="nav-item"><a href="form_layout_horizontal.html" class="nav-link">Agregar alumnos</a></li>
-								<li class="nav-item"><a href="form_layout_horizontal_styled.html" class="nav-link disabled">Custom styles <span class="badge bg-transparent align-self-center ml-auto">Coming soon</span></a></li>
-								<li class="nav-item-divider"></li>
 								<li class="nav-item"><a href="form_layout_horizontal_editar.html" class="nav-link active">Editar alumnos</a></li>
-								<li class="nav-item"><a href="form_layout_horizontal_styled.html" class="nav-link disabled">Custom styles <span class="badge bg-transparent align-self-center ml-auto">Coming soon</span></a></li>
-							
+								<li class="nav-item"><a href="datatable_basic.html" class="nav-link active">Enlistado de alumnos</a></li>
+							</ul>
+						</li>
+						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Enlistado de Maestros</div> <i class="icon-menu" title="Forms"></i></li>
+						<li class="nav-item nav-item-submenu">
+							<a href="#" class="nav-link"><i class="icon-insert-template"></i> <span>Maestros</span></a>
+							<ul class="nav nav-group-sub" data-submenu-title="Form layouts">
+								<li class="nav-item-divider"></li>
+								<li class="nav-item"><a href="datatable_basic_maestros.html" class="nav-link">Enlistado de maestros</a></li>
 							</ul>
 						</li>
 						<!-- /forms -->
@@ -448,21 +453,7 @@
 						<!-- /extensions -->
 
 						<!-- Tables -->
-						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Tables</div> <i class="icon-menu" title="Tables"></i></li>
-						<li class="nav-item nav-item-submenu">
-						
-						</li>
-						<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
-							<a href="#" class="nav-link"><i class="icon-grid7"></i> <span>Data tables</span></a>
-							<ul class="nav nav-group-sub" data-submenu-title="Data tables">
-								<li class="nav-item"><a href="datatable_basic.html" class="nav-link active">Registro de alumnos</a></li>
-								<li class="nav-item"><a href="datatable_styling.html" class="nav-link">Basic styling</a></li>
-								<li class="nav-item"><a href="datatable_advanced.html" class="nav-link">Advanced examples</a></li>
-								<li class="nav-item"><a href="datatable_sorting.html" class="nav-link">Sorting options</a></li>
-								<li class="nav-item"><a href="datatable_api.html" class="nav-link">Using API</a></li>
-								<li class="nav-item"><a href="datatable_data_sources.html" class="nav-link">Data sources</a></li>
-							</ul>
-						</li>
+					
 						
 						<!-- /tables -->
 
@@ -546,7 +537,7 @@
 				<!-- Basic datatable -->
 				<div class="card">
 					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Basic datatable</h5>
+						<h5 class="card-title">Enlistado de alumnos</h5>
 						<div class="header-elements">
 							<div class="list-icons">
 		                		<a class="list-icons-item" data-action="collapse"></a>
@@ -556,9 +547,7 @@
 	                	</div>
 					</div>
 
-					<div class="card-body">
-						The <code>DataTables</code> is a highly flexible tool, based upon the foundations of progressive enhancement, and will add advanced interaction controls to any HTML table. DataTables has most features enabled by default, so all you need to do to use it with your own tables is to call the construction function. Searching, ordering, paging etc goodness will be immediately added to the table, as shown in this example. <strong>Datatables support all available table styling.</strong>
-					</div>
+			
 
 					<table class="table datatable-basic">
 						<thead>
@@ -569,8 +558,8 @@
 								<th>Carrera</th>
 								<th>Cuatrimestre</th>
 								<th>E-mail</th>
-								<th>Teléfono#</th>
 								<th>Status</th>
+								<th class="text-center">Actions</th>
 							</tr>
 						</thead>
 						<tbody>
@@ -581,9 +570,21 @@
 								<td>ITI</td>
 								<td>1</td>
 								<td>1930351@upv.edu.mx</td>
-								<td>8342002121</td>
 								<td><span class="badge badge-success">Active</span></td>
-								<td class="text-center"></td>
+								<td class="text-center">
+									<div class="list-icons">
+										<div class="dropdown">
+											<a href="#" class="list-icons-item" data-toggle="dropdown">
+												<i class="icon-menu9"></i>
+											</a>
+
+											<div class="dropdown-menu dropdown-menu-right">
+												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Eliminar</a>
+												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Editar</a>
+											</div>
+										</div>
+									</div>
+								</td>
 							</tr>
 							<tr>
 								<td>1930346</td>
@@ -592,9 +593,22 @@
 								<td>ITI</td>
 								<td>1</td>
 								<td>1930346@upv.edu.mx</td>
-								<td>8342665073</td>
+								
 								<td><span class="badge badge-success">Active</span></td>
-								<td class="text-center"></td>
+								<td class="text-center">
+									<div class="list-icons">
+										<div class="dropdown">
+											<a href="#" class="list-icons-item" data-toggle="dropdown">
+												<i class="icon-menu9"></i>
+											</a>
+
+											<div class="dropdown-menu dropdown-menu-right">
+												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Eliminar</a>
+												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Editar</a>
+											</div>
+										</div>
+									</div>
+								</td>
 							</tr>
 							<tr>
 								<td>1930341</td>
@@ -603,9 +617,22 @@
 								<td>ITI</td>
 								<td>1</td>
 								<td>1930341@upv.edu.mx</td>
-								<td>8342112212</td>
+								
 								<td><span class="badge badge-secondary">Pending</span></td>
-								<td class="text-center"></td>
+								<td class="text-center">
+									<div class="list-icons">
+										<div class="dropdown">
+											<a href="#" class="list-icons-item" data-toggle="dropdown">
+												<i class="icon-menu9"></i>
+											</a>
+
+											<div class="dropdown-menu dropdown-menu-right">
+												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Eliminar</a>
+												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Editar</a>
+											</div>
+										</div>
+									</div>
+								</td>
 							</tr>
 							<tr>
 								<td>1930336</td>
@@ -614,9 +641,22 @@
 								<td>ITI</td>
 								<td>1</td>
 								<td>1930336@upv.edu.mx</td>
-								<td>8343512164</td>
+								
 								<td><span class="badge badge-success">Active</span></td>
-								<td class="text-center"></td>
+								<td class="text-center">
+									<div class="list-icons">
+										<div class="dropdown">
+											<a href="#" class="list-icons-item" data-toggle="dropdown">
+												<i class="icon-menu9"></i>
+											</a>
+
+											<div class="dropdown-menu dropdown-menu-right">
+												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Eliminar</a>
+												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Editar</a>
+											</div>
+										</div>
+									</div>
+								</td>
 							</tr>
 							<tr>
 								<td>1930652</td>
@@ -625,9 +665,22 @@
 								<td>IM</td>
 								<td>1</td>
 								<td>1930652@upv.edu.mx</td>
-								<td>834065251</td>
+								
 								<td><span class="badge badge-success">Active</span></td>
-								<td class="text-center"></td>
+								<td class="text-center">
+									<div class="list-icons">
+										<div class="dropdown">
+											<a href="#" class="list-icons-item" data-toggle="dropdown">
+												<i class="icon-menu9"></i>
+											</a>
+
+											<div class="dropdown-menu dropdown-menu-right">
+												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Eliminar</a>
+												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Editar</a>
+											</div>
+										</div>
+									</div>
+								</td>
 							</tr>
 							<tr>
 								<td>1930320</td>
@@ -636,9 +689,22 @@
 								<td>ITM</td>
 								<td>0</td>
 								<td>1930320@upv.edu.mx</td>
-								<td>8343132521</td>
+								
 								<td><span class="badge badge-success">Active</span></td>
-								<td class="text-center"></td>
+								<td class="text-center">
+									<div class="list-icons">
+										<div class="dropdown">
+											<a href="#" class="list-icons-item" data-toggle="dropdown">
+												<i class="icon-menu9"></i>
+											</a>
+
+											<div class="dropdown-menu dropdown-menu-right">
+												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Eliminar</a>
+												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Editar</a>
+											</div>
+										</div>
+									</div>
+								</td>
 							</tr>
 							<tr>
 								<td>1935121</td>
@@ -647,20 +713,46 @@
 								<td>ITI</td>
 								<td>1</td>
 								<td>1935121@upv.edu.mx</td>
-								<td>8343156521</td>
+								
 								<td><span class="badge badge-success">Active</span></td>
-								<td class="text-center"></td>
+								<td class="text-center">
+									<div class="list-icons">
+										<div class="dropdown">
+											<a href="#" class="list-icons-item" data-toggle="dropdown">
+												<i class="icon-menu9"></i>
+											</a>
+
+											<div class="dropdown-menu dropdown-menu-right">
+												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Eliminar</a>
+												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Editar</a>
+											</div>
+										</div>
+									</div>
+								</td>
 							</tr>
 							<tr>
 								<td>1932121</td>
 								<td>KIRIGODOMGFLOWREX777</td>
 								<td>PRO</td>
 								<td>ISA</td>
-								<td>17</td>
+								<td>7</td>
 								<td>1932121@upv.edu.mx</td>
-								<td>8344210000</td>
+								
 								<td><span class="badge badge-danger">Suspended</span></td>
-								<td class="text-center"></td>
+								<td class="text-center">
+									<div class="list-icons">
+										<div class="dropdown">
+											<a href="#" class="list-icons-item" data-toggle="dropdown">
+												<i class="icon-menu9"></i>
+											</a>
+
+											<div class="dropdown-menu dropdown-menu-right">
+												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Eliminar</a>
+												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Editar</a>
+											</div>
+										</div>
+									</div>
+								</td>
 							</tr>
 						</tbody>
 					</table>

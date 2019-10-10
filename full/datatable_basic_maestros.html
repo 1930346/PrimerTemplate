@@ -23,11 +23,11 @@
 	<!-- /core JS files -->
 
 	<!-- Theme JS files -->
+	<script src="../../../../global_assets/js/plugins/tables/datatables/datatables.min.js"></script>
 	<script src="../../../../global_assets/js/plugins/forms/selects/select2.min.js"></script>
-	<script src="../../../../global_assets/js/plugins/forms/styling/uniform.min.js"></script>
 
 	<script src="assets/js/app.js"></script>
-	<script src="../../../../global_assets/js/demo_pages/form_layouts.js"></script>
+	<script src="../../../../global_assets/js/demo_pages/datatables_basic.js"></script>
 	<!-- /theme JS files -->
 
 </head>
@@ -411,7 +411,7 @@
 								</span>
 							</a>
 						</li>
-						
+						<!-- /main -->
 
 						<!-- Forms -->
 						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Formularios</div> <i class="icon-menu" title="Forms"></i></li>
@@ -420,11 +420,10 @@
 						<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
 							<a href="#" class="nav-link"><i class="icon-insert-template"></i> <span>Alumnos</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Form layouts">
-					
 								<li class="nav-item-divider"></li>
-								<li class="nav-item"><a href="form_layout_horizontal.html" class="nav-link active">Agregar alumnos</a></li>
+								<li class="nav-item"><a href="form_layout_horizontal.html" class="nav-link">Agregar alumnos</a></li>
 								<li class="nav-item"><a href="form_layout_horizontal_editar.html" class="nav-link active">Editar alumnos</a></li>
-								<li class="nav-item"><a href="datatable_basic.html" class="nav-link">Enlistado de alumnos</a></li>
+								<li class="nav-item"><a href="datatable_basic.html" class="nav-link active">Enlistado de alumnos</a></li>
 							</ul>
 						</li>
 						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Enlistado de Maestros</div> <i class="icon-menu" title="Forms"></i></li>
@@ -437,11 +436,30 @@
 						</li>
 						<!-- /forms -->
 
+						<!-- Components -->
 						
+						<!-- /components -->
+
+						<!-- Layout -->
+						
+						<!-- /layout -->
+
+						<!-- Data visualization -->
+						
+						<!-- /data visualization -->
+
+						<!-- Extensions -->
+						
+						<!-- /extensions -->
 
 						<!-- Tables -->
 					
 						
+						<!-- /tables -->
+
+						<!-- Page kits -->
+						
+						<!-- /page kits -->
 
 					</ul>
 				</div>
@@ -461,7 +479,7 @@
 			<div class="page-header page-header-light">
 				<div class="page-header-content header-elements-md-inline">
 					<div class="page-title d-flex">
-						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Formularios</span> - Agregar alumnos</h4>
+						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Datatables</span> - Registro de Maestros</h4>
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
 					</div>
 
@@ -478,8 +496,8 @@
 					<div class="d-flex">
 						<div class="breadcrumb">
 							<a href="index.html" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Home</a>
-							<a href="form_layout_horizontal.html" class="breadcrumb-item">Formularios</a>
-							<span class="breadcrumb-item active">Agregar alumnos</span>
+							<a href="datatable_basic.html" class="breadcrumb-item">Datatables</a>
+							<span class="breadcrumb-item active">Registro de Maestros</span>
 						</div>
 
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
@@ -516,183 +534,460 @@
 			<!-- Content area -->
 			<div class="content">
 
-				<!-- Horizontal form options -->
-				<div class="row">
-					<div class="col-md-6">
-
-						
-
-					</div>
-
-					<div class="col-md-6">
-
-						
-
-					</div>
-				</div>
-				<!-- /vertical form options -->
-
-
-				
-
-
-				<!-- Fieldset legend -->
-				<div class="row">
-					<div class="col-md-6">
-
-					
-
-					</div>
-
-					<div class="col-md-6">
-
-						
-
-					</div>
-				</div>
-				<!-- /fieldset legend -->
-
-
-				<!-- 2 columns form -->
+	
+				<!-- Basic datatable -->
 				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Agregar Alumnos</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
-
-					<div class="card-body">
-						<form action="#">
-							<div class="row">
-								<div class="col-md-6">
-									<fieldset>
-										<legend class="font-weight-semibold"><i class="icon-reading mr-2"></i> Personal details</legend>
-
-										<div class="form-group row">
-											<label class="col-lg-3 col-form-label">Matrícula:</label>
-											<div class="col-lg-9">
-												<input type="text" class="form-control" placeholder="">
-											</div>
-										</div>
-
-										<div class="form-group row">
-											<label class="col-lg-3 col-form-label">Nombres: </label>
-											<div class="col-lg-9">
-												<input type="text" class="form-control" placeholder="">
-											</div>
-										</div>
-
-										<div class="form-group row">
-											<label class="col-lg-3 col-form-label">Apellidos: </label>
-											<div class="col-lg-9">
-												<input type="text" class="form-control" placeholder="">
-											</div>
-										</div>
-
-										<div class="form-group row">
-											<label class="col-lg-3 col-form-label">Selecciona la carrera:</label>
-											<div class="col-lg-9">
-												<select data-placeholder="Selecciona tu carrera" class="form-control form-control-select2" data-fouc>
-													<option></option>
-													<optgroup label="Carreras disponibles">
-														<option value="ITI">Ingeniería en Tecnologías de la Información</option>
-														<option value="IM">Ingeniería en Mecatrónica</option>
-														<option value="ITM">Ingeniería en Tecnologías de Manufactura</option>
-														<option value="LAyGE">Licenciatura en Administración y Gestion Empresarial</option>
-														<option value="M.I">Maestría en Ingeniería</option>
-													</optgroup>
-												</select>
-											</div>
-										</div>
-
-										<div class="form-group row">
-											<label class="col-lg-3 col-form-label">Cuatrimestre:</label>
-											<div class="col-lg-9">
-												<select data-placeholder="Cuatrimestre" class="form-control form-control-select2" data-fouc>
-													<option></option>
-													<optgroup label="Cuatrimestres">
-														<option value="0">0</option>
-														<option value="1">1</option>
-														<option value="2">2</option>
-														<option value="3">3</option>
-														<option value="4">4</option>
-														<option value="5">5</option>
-														<option value="6">6</option>
-														<option value="7">7</option>
-														<option value="8">8</option>
-														<option value="9">9</option>
-														<option value="10">10</option>
-													</optgroup>
-												</select>
-											</div>
-										</div>
-										
-
-										<div class="form-group row">
-											<label class="col-lg-3 col-form-label">Imagen Personal</label>
-											<div class="col-lg-9">
-												<input type="file" class="form-input-styled" data-fouc>
-											</div>
-										</div>
-
-										<div class="form-group row">
-											<label class="col-lg-3 col-form-label">¿Qué espera de la carrera?</label>
-											<div class="col-lg-9">
-												<textarea rows="5" cols="5" class="form-control" placeholder="Enter your message here"></textarea>
-											</div>
-										</div>
-									</fieldset>
+						<div class="card-header header-elements-inline">
+							<h5 class="card-title">Enlistado de Maestros</h5>
+							
+							<div class="header-elements">
+								<div class="list-icons">
+									<a class="list-icons-item" data-action="collapse"></a>
+									<a class="list-icons-item" data-action="reload"></a>
+									<a class="list-icons-item" data-action="remove"></a>
 								</div>
+							</div>
+						</div>
+				
+					
+					<!--ESTO ES NUEVO PARA MI PARA LA PARTE DE LOS BOTONES DE MODALES EN LA PARTE DE ARRIBA-->
+					<div id="DataTables_Table_0_filter" class="dataTables_filter">
+						<div class="content">
 
-								<div class="col-md-6">
+							<a href="#ventana1" class="btn btn-primary btn-lg" data-toggle="modal">Registrar Maestros</a>		
+								<!--AQUÍ EMPIEAZ EDITAR-->
+
+								<a href="#ventana2" class="btn btn-primary btn-lg" data-toggle="modal">Editar Maestros</a>		
+								<div class="modal fade" id="ventana2" role="dialog">
+									<div class="modal-dialog modal-8" role="document">
+										<div class="modal-content">						
+											<div class="card">
+												<div class="card-header header-elements-inline">
+													<h5 class="card-title">Modifique los datos</h5>														
+													<div class="header-elements">
+												</div>
+											</div>				
+										<div class="card-body">
+									<form action="#">
+										<div class="row">
+											<div class="col-md-10">
+											<fieldset>
+												<legend class="font-weight-semibold"><i class="icon-reading mr-2"></i> Detalles Personales</legend>							
+												<div class="form-group row">
+													<label class="col-lg-3 col-form-label">Clave</label>
+													<div class="col-lg-9">
+														<input type="text" placeholder="2512315" class="form-control">
+													</div>
+												</div>
+												<div class="form-group row">
+													<label class="col-lg-3 col-form-label">Ingrese su nombre/s:</label>
+													<div class="col-lg-9">
+														<input type="text" placeholder="Jorge Arturo" class="form-control">
+													</div>
+												</div>
+												<div class="form-group row">
+													<label class="col-lg-3 col-form-label">Ingrese su apellido:</label>
+													<div class="col-lg-9">
+														<input type="text" placeholder="Hernández Almazán" class="form-control">
+													</div>
+												</div>	
+												<div class="form-group row">
+														<label class="col-lg-3 col-form-label">Edad:</label>
+														<div class="col-lg-9">
+															<input type="number" placeholder="34" class="form-control">
+														</div>
+													</div>	
+												<div class="form-group row">
+													<label class="col-lg-3 col-form-label">Investigaciones:</label>
+													<div class="col-lg-9">
+														<input type="text" placeholder="Si" class="form-control">
+													</div>
+												</div>
+												<div class="form-group row">
+													<label class="col-lg-3 col-form-label">Nivel de estudios:</label>
+													<div class="col-lg-9">
+														<input type="text" placeholder="Doctorado" class="form-control">
+													</div>
+												</div>
+												<div class="form-group row">
+													<label class="col-lg-3 col-form-label">Certificados:</label>
+													<div class="col-lg-9">
+														<textarea rows="10" cols="10" placeholder="CCNA, TOEFL" class="form-control"></textarea>
+													</div>
+												</div>
+											</div>		
+											</fieldset>
+										</div>	
+										<div class="col-md-10">
+										<fieldset>
+											<legend class="font-weight-semibold"><i class="icon-truck mr-2"></i> Contacto</legend>
+											<div class="form-group row">
+												<label class="col-lg-3 col-form-label">Correo Electrónico:</label>
+												<div class="col-lg-9">
+													<input type="text" placeholder="jhernandeza@upv.edu.mx" class="form-control">
+												</div>
+											</div>
+											<div class="form-group row">
+												<label class="col-lg-3 col-form-label">Teléfono:</label>
+												<div class="col-lg-9">
+													<input type="text" placeholder="8345551341" class="form-control">
+												</div>
+											</div>
+											<div class="form-group row">
+												<label class="col-lg-3 col-form-label">Dirección:</label>
+												<div class="col-lg-9">
+													<input type="text" placeholder="Fraccionamiento Industrial" class="form-control">
+												</div>
+											</div>
+										</fieldset>
+										</div>
+									</div>
+									<div class="text-center">
+										<button type="submit" class="btn btn-primary">Enviar<i class="icon-paperplane ml-2"></i></button>
+									</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+						<!--AQUÍ ACABA EDITAR-->		
+									
+							<div class="modal fade" id="ventana1" tabindex="-1" role="dialog">
+								<div class="modal-dialog modal-8" role="document">
+									<div class="modal-content">						
+										<div class="card">
+											<div class="card-header header-elements-inline">
+												<h5 class="card-title">Ingrese los datos</h5>														
+												<div class="header-elements">
+											</div>
+										</div>				
+									<div class="card-body">
+								<form action="#">
+									<div class="row">
+										<div class="col-md-10">
+										<fieldset>
+											<legend class="font-weight-semibold"><i class="icon-reading mr-2"></i> Detalles Personales</legend>							
+											<div class="form-group row">
+												<label class="col-lg-3 col-form-label">Clave</label>
+												<div class="col-lg-9">
+													<input type="text" class="form-control">
+												</div>
+											</div>
+											<div class="form-group row">
+												<label class="col-lg-3 col-form-label">Ingrese su nombre/s:</label>
+												<div class="col-lg-9">
+													<input type="text" class="form-control">
+												</div>
+											</div>
+											<div class="form-group row">
+												<label class="col-lg-3 col-form-label">Ingrese su apellido:</label>
+												<div class="col-lg-9">
+													<input type="text" class="form-control">
+												</div>
+											</div>	
+											<div class="form-group row">
+													<label class="col-lg-3 col-form-label">Edad:</label>
+													<div class="col-lg-9">
+														<input type="number" class="form-control">
+													</div>
+												</div>	
+											<div class="form-group row">
+												<label class="col-lg-3 col-form-label">Investigaciones:</label>
+												<div class="col-lg-9">
+													<input type="text" class="form-control">
+												</div>
+											</div>
+											<div class="form-group row">
+												<label class="col-lg-3 col-form-label">Nivel de estudios:</label>
+												<div class="col-lg-9">
+													<input type="text" class="form-control">
+												</div>
+											</div>
+											<div class="form-group row">
+												<label class="col-lg-3 col-form-label">Certificados:</label>
+												<div class="col-lg-9">
+													<textarea rows="10" cols="10" class="form-control"></textarea>
+												</div>
+											</div>
+										</div>		
+										</fieldset>
+									</div>	
+									<div class="col-md-10">
 									<fieldset>
-					                	<legend class="font-weight-semibold"><i class="icon-truck mr-2"></i> Contact</legend>
-
+										<legend class="font-weight-semibold"><i class="icon-truck mr-2"></i> Contacto</legend>
 										<div class="form-group row">
-											<label class="col-lg-3 col-form-label">Correo electrónico:</label>
+											<label class="col-lg-3 col-form-label">Correo Electrónico:</label>
 											<div class="col-lg-9">
-												<input type="text" placeholder="" class="form-control">
+												<input type="text" class="form-control">
 											</div>
 										</div>
-
 										<div class="form-group row">
-											<label class="col-lg-3 col-form-label">Teléfono #:</label>
+											<label class="col-lg-3 col-form-label">Teléfono:</label>
 											<div class="col-lg-9">
-												<input type="text" placeholder="" class="form-control">
+												<input type="text" class="form-control">
 											</div>
 										</div>
-
-										
-
 										<div class="form-group row">
 											<label class="col-lg-3 col-form-label">Dirección:</label>
 											<div class="col-lg-9">
-												<input type="text" placeholder="" class="form-control">
-											</div>
-										</div>
-
-										<div class="form-group row">
-											<label class="col-lg-3 col-form-label">Descripción de la casa:</label>
-											<div class="col-lg-9">
-												<textarea rows="5" cols="5" class="form-control" placeholder="Ingrese su descripción aquí"></textarea>
+												<input type="text" class="form-control">
 											</div>
 										</div>
 									</fieldset>
+									</div>
 								</div>
+								<div class="text-center">
+									<button type="submit" class="btn btn-primary">Enviar<i class="icon-paperplane ml-2"></i></button>
+								</div>
+								</form>
 							</div>
-
-							<div class="text-right">
-								<button type="submit" class="btn btn-primary">Submit form <i class="icon-paperplane ml-2"></i></button>
-							</div>
-						</form>
+					
+						</div>
+						
 					</div>
 				</div>
-				<!-- /2 columns form -->
+			</div>
+		<!--/Modal-->
+
+		<!--LLENADO DE LA DATATABLE-->
+	</div>
+	<table class="table datatable-basic dataTable no-footer" cellspacing="0" width="100%" id="DataTables_Table_0" role="grid" aria-describedby="DataTables_Table_0_info">
+						<thead>
+							<tr>
+								<th>Clave</th>
+								<th>Nombres</th>
+								<th>Apellidos</th>
+								<th>Edad</th>
+								<th>Investigaciones</th>
+								<th>Nivel de estudios</th>
+								<th>Certificados</th>
+								<th>E-mail</th>
+								<th>Teléfono</th>
+								<th>Status</th>
+								<th class="text-center">Actions</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>2512315</td>
+								<td>Jorge Arturo</td>
+								<td>Hernández Almazán</td>
+								<td>32</td>
+								<td>Si</td>
+								<td>Doctorado</td>
+								<td>CCNA, TOEFL</td>
+								<td>jhernandeza@upv.edu.mx</td>
+								<td>8345551341</td>
+								<td><span class="badge badge-success">Active</span></td>
+								<td class="text-center">
+									<div class="list-icons">
+										<div class="dropdown">
+											<a href="#" class="list-icons-item" data-toggle="dropdown">
+												<i class="icon-menu9"></i>
+											</a>
+											<div class="dropdown-menu dropdown-menu-right">
+												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Eliminar</a>
+												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Editar</a>
+											</div>
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>1930352</td>
+								<td>Mario Humberto</td>
+								<td>Rodríguez Chávez</td>
+								<td>39</td>
+								<td>Si</td>
+								<td>Maestría en Ingeniería</td>
+								<td>CCNA</td>
+								<td>mrodriguezc@upv.edu.mx</td>
+								<td>8342512321</td>
+								<td><span class="badge badge-success">Active</span></td>
+								<td class="text-center">
+									<div class="list-icons">
+										<div class="dropdown">
+											<a href="#" class="list-icons-item" data-toggle="dropdown">
+												<i class="icon-menu9"></i>
+											</a>
+											<div class="dropdown-menu dropdown-menu-right">
+												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Eliminar</a>
+												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Editar</a>
+											</div>
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>3516121</td>
+								<td>Jorge Omar</td>
+								<td>Jasso Luna</td>
+								<td>35</td>
+								<td>Si</td>
+								<td>Maestría en Computación</td>
+								<td>CCPA, TOEFL, MYSQL</td>
+								<td>jojassol@upv.edu.mx</td>
+								<td>8343412141</td>
+								<td><span class="badge badge-success">Active</span></td>
+								<td class="text-center">
+									<div class="list-icons">
+										<div class="dropdown">
+											<a href="#" class="list-icons-item" data-toggle="dropdown">
+												<i class="icon-menu9"></i>
+											</a>
+											<div class="dropdown-menu dropdown-menu-right">
+												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Eliminar</a>
+												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Editar</a>
+											</div>
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>1934142</td>
+								<td>Eréndira</td>
+								<td>Gutiérrez Meza</td>
+								<td>40</td>
+								<td>No</td>
+								<td>Maestría en Ingeniería</td>
+								<td>Yellow Belt</td>
+								<td>egutierrezm@upv.edu.mx</td>
+								<td>8343434211</td>
+								<td><span class="badge badge-success">Active</span></td>
+								<td class="text-center">
+									<div class="list-icons">
+										<div class="dropdown">
+											<a href="#" class="list-icons-item" data-toggle="dropdown">
+												<i class="icon-menu9"></i>
+											</a>
+											<div class="dropdown-menu dropdown-menu-right">
+												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Eliminar</a>
+												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Editar</a>
+											</div>
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>1233456</td>
+								<td>Marco Vinicio</td>
+								<td>Flores Ureño</td>
+								<td>25</td>
+								<td>Si</td>
+								<td>Maestría en Materiales Avanzados</td>
+								<td>Yellow Belt, AUTOCAD</td>
+								<td>mfloresu@upv.edu.mx</td>
+								<td>8343321110</td>
+								<td><span class="badge badge-success">Active</span></td>
+								<td class="text-center">
+									<div class="list-icons">
+										<div class="dropdown">
+											<a href="#" class="list-icons-item" data-toggle="dropdown">
+												<i class="icon-menu9"></i>
+											</a>
+											<div class="dropdown-menu dropdown-menu-right">
+												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Eliminar</a>
+												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Editar</a>
+											</div>
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>2870909</td>
+								<td>Noé</td>
+								<td>Velázquez Barrón</td>
+								<td>54</td>
+								<td>Si</td>
+								<td>Doctorado, M.C.F.M</td>
+								<td>No</td>
+								<td>nvazquezb@upv.edu.mx</td>
+								<td>8343214243</td>
+								<td><span class="badge badge-success">Active</span></td>
+								<td class="text-center">
+									<div class="list-icons">
+										<div class="dropdown">
+											<a href="#" class="list-icons-item" data-toggle="dropdown">
+												<i class="icon-menu9"></i>
+											</a>
+											<div class="dropdown-menu dropdown-menu-right">
+												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Eliminar</a>
+												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Editar</a>
+											</div>
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>3342121</td>
+								<td>Rosa María</td>
+								<td>Martínez Zavala</td>
+								<td>42</td>
+								<td>No</td>
+								<td>Licenciada en Sociología</td>
+								<td>No</td>
+								<td>rmartinezz@upv.edu.mx</td>
+								<td>8343412233</td>
+								<td><span class="badge badge-success">Active</span></td>
+								<td class="text-center">
+									<div class="list-icons">
+										<div class="dropdown">
+											<a href="#" class="list-icons-item" data-toggle="dropdown">
+												<i class="icon-menu9"></i>
+											</a>
+											<div class="dropdown-menu dropdown-menu-right">
+												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Eliminar</a>
+												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Editar</a>
+											</div>
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>2003121</td>
+								<td>Carlos</td>
+								<td>Orozco García</td>
+								<td>47</td>
+								<td>Si</td>
+								<td>Maestría en Ciencias</td>
+								<td>CCNA</td>
+								<td>corozcog@upv.edu.mx</td>
+								<td>8343335455</td>
+								<td><span class="badge badge-success">Active</span></td>
+								<td class="text-center">
+									<div class="list-icons">
+										<div class="dropdown">
+											<a href="#" class="list-icons-item" data-toggle="dropdown">
+												<i class="icon-menu9"></i>
+											</a>
+											<div class="dropdown-menu dropdown-menu-right">
+												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Eliminar</a>
+												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Editar</a>
+											</div>
+										</div>
+									</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			
+				<!-- /basic datatable -->
+
+
+				<!-- Pagination types -->
+				
+				<!-- /pagination types -->
+
+
+				<!-- State saving -->
+				
+				<!-- /state saving -->
+
+
+				<!-- Scrollable datatable -->
+			
+				<!-- /scrollable datatable -->
 
 			</div>
 			<!-- /content area -->
