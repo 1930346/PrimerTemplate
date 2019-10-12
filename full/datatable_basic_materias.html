@@ -417,13 +417,13 @@
 						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Formularios</div> <i class="icon-menu" title="Forms"></i></li>
 						<li class="nav-item nav-item-submenu">
 							
-						<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
+						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-insert-template"></i> <span>Alumnos</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Form layouts">
 								<li class="nav-item-divider"></li>
 								<li class="nav-item"><a href="form_layout_horizontal.html" class="nav-link">Agregar alumnos</a></li>
 								<li class="nav-item"><a href="form_layout_horizontal_editar.html" class="nav-link">Editar alumnos</a></li>
-								<li class="nav-item"><a href="datatable_basic.html" class="nav-link active">Enlistado de alumnos</a></li>
+								<li class="nav-item"><a href="datatable_basic.html" class="nav-link">Enlistado de alumnos</a></li>
 							</ul>
 						</li>
 						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Enlistado de Maestros</div> <i class="icon-menu" title="Forms"></i></li>
@@ -435,11 +435,11 @@
 							</ul>
 						</li>
 						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Enlistado de Grupos y Materias</div> <i class="icon-menu" title="Forms"></i></li>
-						<li class="nav-item nav-item-submenu">
+						<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
 							<a href="#" class="nav-link"><i class="icon-insert-template"></i> <span>Grupos y Materias</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Form layouts">
 								<li class="nav-item-divider"></li>
-								<li class="nav-item"><a href="datatable_basic_materias.html" class="nav-link">Enlistado de materias</a></li>
+								<li class="nav-item"><a href="datatable_basic_materias.html" class="nav-link active">Enlistado de materias</a></li>
 								<li class="nav-item"><a href="datatable_basic_grupos.html" class="nav-link">Enlistado de grupos</a></li>
 							
 							</ul>
@@ -489,7 +489,7 @@
 			<div class="page-header page-header-light">
 				<div class="page-header-content header-elements-md-inline">
 					<div class="page-title d-flex">
-						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Datatables</span> - Registro de alumnos</h4>
+						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Datatables</span> - Registro de Materias</h4>
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
 					</div>
 
@@ -507,7 +507,7 @@
 						<div class="breadcrumb">
 							<a href="index.html" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Home</a>
 							<a href="datatable_basic.html" class="breadcrumb-item">Datatables</a>
-							<span class="breadcrumb-item active">Registro de alumnos</span>
+							<span class="breadcrumb-item active">Registro de Materias</span>
 						</div>
 
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
@@ -544,50 +544,149 @@
 			<!-- Content area -->
 			<div class="content">
 
+	
 				<!-- Basic datatable -->
 				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Enlistado de alumnos</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
+						<div class="card-header header-elements-inline">
+							<h5 class="card-title">Enlistado de Materias</h5>
+							
+							<div class="header-elements">
+								<div class="list-icons">
+									<a class="list-icons-item" data-action="collapse"></a>
+									<a class="list-icons-item" data-action="reload"></a>
+									<a class="list-icons-item" data-action="remove"></a>
+								</div>
+							</div>
+						</div>
+				
+					
+					<!--ESTO ES NUEVO PARA MI PARA LA PARTE DE LOS BOTONES DE MODALES EN LA PARTE DE ARRIBA-->
+					<div id="DataTables_Table_0_filter" class="dataTables_filter">
+						<div class="content">
+
+							<a href="#ventana1" class="btn btn-primary btn-lg" data-toggle="modal">Agregar Materias</a>		
+								<!--AQUÍ EMPIEAZ EDITAR-->
+
+								<a href="#ventana2" class="btn btn-primary btn-lg" data-toggle="modal">Editar Materias</a>		
+								<div class="modal fade" id="ventana2" role="dialog">
+									<div class="modal-dialog modal-8" role="document">
+										<div class="modal-content">						
+											<div class="card">
+												<div class="card-header header-elements-inline">
+													<h5 class="card-title">Modifique los datos</h5>														
+													<div class="header-elements">
+												</div>
+											</div>				
+										<div class="card-body">
+									<form action="#">
+										<div class="row">
+											<div class="col-md-10">
+											<fieldset>
+												<legend class="font-weight-semibold"><i class="icon-reading mr-2"></i> Datos de la materia</legend>							
+												<div class="form-group row">
+													<label class="col-lg-3 col-form-label">Clave</label>
+													<div class="col-lg-9">
+														<input type="text" placeholder="2708B" class="form-control">
+													</div>
+												</div>
+												<div class="form-group row">
+													<label class="col-lg-3 col-form-label">Nombre de la materia:</label>
+													<div class="col-lg-9">
+														<input type="text" placeholder="Álgebra lineal" class="form-control">
+													</div>
+												</div>
+												<div class="form-group row">
+													<label class="col-lg-3 col-form-label">Cuatrimestre:</label>
+													<div class="col-lg-9">
+														<input type="number" placeholder="1" class="form-control">
+													</div>
+												</div>	
+												
+											</div>		
+											</fieldset>
+										</div>	
+									</div>
+									<div class="text-center">
+										<button type="submit" class="btn btn-primary">Enviar<i class="icon-paperplane ml-2"></i></button>
+									</div>
+									</form>
+								</div>
+							</div>
+						</div>
 					</div>
+						<!--AQUÍ ACABA EDITAR-->		
+									
+							<div class="modal fade" id="ventana1" tabindex="-1" role="dialog">
+								<div class="modal-dialog modal-8" role="document">
+									<div class="modal-content">						
+										<div class="card">
+											<div class="card-header header-elements-inline">
+												<h5 class="card-title">Ingrese los datos</h5>														
+												<div class="header-elements">
+											</div>
+										</div>				
+									<div class="card-body">
+								<form action="#">
+									<div class="row">
+										<div class="col-md-10">
+										<fieldset>
+											<legend class="font-weight-semibold"><i class="icon-reading mr-2"></i> Datos de la materia</legend>							
+											<div class="form-group row">
+												<label class="col-lg-3 col-form-label">Clave:</label>
+												<div class="col-lg-9">
+													<input type="text" class="form-control">
+												</div>
+											</div>
+											<div class="form-group row">
+												<label class="col-lg-3 col-form-label">Nombre de la materia:</label>
+												<div class="col-lg-9">
+													<input type="text" class="form-control">
+												</div>
+											</div>
+											<div class="form-group row">
+												<label class="col-lg-3 col-form-label">Cuatrimestre:</label>
+												<div class="col-lg-9">
+													<input type="number" class="form-control">
+												</div>
+											</div>	
+											
+									</div>
+								</div>
+								<div class="text-center">
+									<button type="submit" class="btn btn-primary">Enviar<i class="icon-paperplane ml-2"></i></button>
+								</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		<!--/Modal-->
 
-			
-
-					<table class="table datatable-basic">
+		<!--LLENADO DE LA DATATABLE-->
+	</div>
+	<table class="table datatable-basic dataTable no-footer" cellspacing="0" width="100%" id="DataTables_Table_0" role="grid" aria-describedby="DataTables_Table_0_info">
 						<thead>
 							<tr>
-								<th>Matrícula</th>
-								<th>Nombres</th>
-								<th>Apellidos</th>
-								<th>Carrera</th>
+								<th>Clave</th>
+								<th>Nombre de la materia</th>
 								<th>Cuatrimestre</th>
-								<th>E-mail</th>
-								<th>Status</th>
+								<th>Estado de la materia</th>
 								<th class="text-center">Actions</th>
 							</tr>
 						</thead>
 						<tbody>
 							<tr>
-								<td>1930351</td>
-								<td>Dino Tonatiuh</td>
-								<td>Gutiérrez Martínez</td>
-								<td>ITI</td>
+								<td>2781B</td>
+								<td>Química Básica</td>
 								<td>1</td>
-								<td>1930351@upv.edu.mx</td>
-								<td><span class="badge badge-success">Active</span></td>
+								<td><span class="badge badge-success">Activa</span></td>
 								<td class="text-center">
 									<div class="list-icons">
 										<div class="dropdown">
 											<a href="#" class="list-icons-item" data-toggle="dropdown">
 												<i class="icon-menu9"></i>
 											</a>
-
 											<div class="dropdown-menu dropdown-menu-right">
 												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Eliminar</a>
 												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Editar</a>
@@ -597,21 +696,16 @@
 								</td>
 							</tr>
 							<tr>
-								<td>1930346</td>
-								<td>Roberto Eduardo</td>
-								<td>Higuera Sánchez</td>
-								<td>ITI</td>
+								<td>2814A</td>
+								<td>Funciones Matemáticas</td>
 								<td>1</td>
-								<td>1930346@upv.edu.mx</td>
-								
-								<td><span class="badge badge-success">Active</span></td>
+								<td><span class="badge badge-success">Activa</span></td>
 								<td class="text-center">
 									<div class="list-icons">
 										<div class="dropdown">
 											<a href="#" class="list-icons-item" data-toggle="dropdown">
 												<i class="icon-menu9"></i>
 											</a>
-
 											<div class="dropdown-menu dropdown-menu-right">
 												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Eliminar</a>
 												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Editar</a>
@@ -621,21 +715,16 @@
 								</td>
 							</tr>
 							<tr>
-								<td>1930341</td>
-								<td>Edgar Uriel</td>
-								<td>Ramos Ramírez</td>
-								<td>ITI</td>
-								<td>1</td>
-								<td>1930341@upv.edu.mx</td>
-								
-								<td><span class="badge badge-secondary">Pending</span></td>
+								<td>3012C</td>
+								<td>Hardware y Software</td>
+								<td>2</td>
+								<td><span class="badge badge-danger">Inexistente</span></td>
 								<td class="text-center">
 									<div class="list-icons">
 										<div class="dropdown">
 											<a href="#" class="list-icons-item" data-toggle="dropdown">
 												<i class="icon-menu9"></i>
 											</a>
-
 											<div class="dropdown-menu dropdown-menu-right">
 												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Eliminar</a>
 												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Editar</a>
@@ -645,21 +734,16 @@
 								</td>
 							</tr>
 							<tr>
-								<td>1930336</td>
-								<td>Andrea</td>
-								<td>Charles Santos</td>
-								<td>ITI</td>
-								<td>1</td>
-								<td>1930336@upv.edu.mx</td>
-								
-								<td><span class="badge badge-success">Active</span></td>
+								<td>10121</td>
+								<td>Cálculo Integral</td>
+								<td>3</td>
+								<td><span class="badge badge-success">Activa</span></td>
 								<td class="text-center">
 									<div class="list-icons">
 										<div class="dropdown">
 											<a href="#" class="list-icons-item" data-toggle="dropdown">
 												<i class="icon-menu9"></i>
 											</a>
-
 											<div class="dropdown-menu dropdown-menu-right">
 												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Eliminar</a>
 												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Editar</a>
@@ -669,93 +753,73 @@
 								</td>
 							</tr>
 							<tr>
-								<td>1930652</td>
-								<td>Estefania</td>
-								<td>Mata Beltrán</td>
-								<td>IM</td>
-								<td>1</td>
-								<td>1930652@upv.edu.mx</td>
-								
-								<td><span class="badge badge-success">Active</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Eliminar</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Editar</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>1930320</td>
-								<td>Melissa Anahí</td>
-								<td>Olvera Carreño</td>
-								<td>ITM</td>
-								<td>0</td>
-								<td>1930320@upv.edu.mx</td>
-								
-								<td><span class="badge badge-success">Active</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Eliminar</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Editar</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>1935121</td>
-								<td>José Carlos</td>
-								<td>Ávalos Ruíz</td>
-								<td>ITI</td>
-								<td>1</td>
-								<td>1935121@upv.edu.mx</td>
-								
-								<td><span class="badge badge-success">Active</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Eliminar</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Editar</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>1932121</td>
-								<td>KIRIGODOMGFLOWREX777</td>
-								<td>PRO</td>
-								<td>ISA</td>
+								<td>2787A</td>
+								<td>Programación Orientada a Objetos</td>
 								<td>7</td>
-								<td>1932121@upv.edu.mx</td>
-								
-								<td><span class="badge badge-danger">Suspended</span></td>
+								<td><span class="badge badge-success">Activa</span></td>
 								<td class="text-center">
 									<div class="list-icons">
 										<div class="dropdown">
 											<a href="#" class="list-icons-item" data-toggle="dropdown">
 												<i class="icon-menu9"></i>
 											</a>
-
+											<div class="dropdown-menu dropdown-menu-right">
+												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Eliminar</a>
+												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Editar</a>
+											</div>
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>2788F</td>
+								<td>Teorías de la administración</td>
+								<td>4</td>
+								<td><span class="badge badge-success">Activa</span></td>
+								<td class="text-center">
+									<div class="list-icons">
+										<div class="dropdown">
+											<a href="#" class="list-icons-item" data-toggle="dropdown">
+												<i class="icon-menu9"></i>
+											</a>
+											<div class="dropdown-menu dropdown-menu-right">
+												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Eliminar</a>
+												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Editar</a>
+											</div>
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>8797E</td>
+								<td>Calidad productiva</td>
+								<td>6</td>
+								<td><span class="badge badge-success">Active</span></td>
+								<td class="text-center">
+									<div class="list-icons">
+										<div class="dropdown">
+											<a href="#" class="list-icons-item" data-toggle="dropdown">
+												<i class="icon-menu9"></i>
+											</a>
+											<div class="dropdown-menu dropdown-menu-right">
+												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Eliminar</a>
+												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Editar</a>
+											</div>
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>3700B</td>
+								<td>Física II</td>
+								<td>6</td>
+								<td><span class="badge badge-success">Active</span></td>
+								<td class="text-center">
+									<div class="list-icons">
+										<div class="dropdown">
+											<a href="#" class="list-icons-item" data-toggle="dropdown">
+												<i class="icon-menu9"></i>
+											</a>
 											<div class="dropdown-menu dropdown-menu-right">
 												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Eliminar</a>
 												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Editar</a>
@@ -767,6 +831,7 @@
 						</tbody>
 					</table>
 				</div>
+			
 				<!-- /basic datatable -->
 
 
